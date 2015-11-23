@@ -19,17 +19,17 @@ nav {
         list-style: none;
     }
 
-    li { 
-        display: inline-block; 
-        font-family: 'Lobster', $font-stack;
-        font-size: 22px;
-    }
-
     a {
         display: block;
         padding: 6px 12px;
         text-decoration: none;
     }
+}
+
+.list { 
+    display: inline-block; 
+    font-family: 'Lobster', $font-stack;
+    font-size: 22px;
 }
 
 @mixin pmargin($upbottom, $leftright) {
@@ -45,7 +45,7 @@ div {
     @include pmargin(2em, 10px);
 
     #explain {
-        @extend div;
+        @extend .list;
         @include pmargin(5em, 100px);
         color: lighten($primary-color, 30%);
     }

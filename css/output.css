@@ -11,16 +11,17 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none; }
-nav li {
-  display: inline-block;
-  font-family: "Lobster", Helvetica, sans-serif;
-  font-size: 22px; }
 nav a {
   display: block;
   padding: 6px 12px;
   text-decoration: none; }
 
-div, div #explain {
+.list, div #explain {
+  display: inline-block;
+  font-family: "Lobster", Helvetica, sans-serif;
+  font-size: 22px; }
+
+div {
   display: block;
   -webkit-margin-before: 2em;
   -webkit-margin-after: 2em;
