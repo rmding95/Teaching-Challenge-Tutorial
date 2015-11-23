@@ -9,13 +9,16 @@ body {
     margin: 8px;
 }
 
-
-p {
+@mixin pmargin{
     display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+}
+
+p {
+    @include pmargin;
 }
 
 @mixin sizing{
