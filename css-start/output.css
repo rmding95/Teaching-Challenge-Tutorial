@@ -1,3 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+body {
+  font: 100% Helvetic, sans-serif;
+  color: #333;
+  padding: 22px;
+  line-height: 2em;
+  display: block;
+  margin: 8px; }
 
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+div {
+  display: inline-block;
+  -webkit-margin-before: 2em;
+  -webkit-margin-after: 2em;
+  -webkit-margin-start: 10px;
+  -webkit-margin-end: 10px; }
+  div #explain {
+    display: inline-block;
+    -webkit-margin-before: 5em;
+    -webkit-margin-after: 5em;
+    -webkit-margin-start: 100px;
+    -webkit-margin-end: 100px;
+    color: gray; }
+
+.list, div #explain {
+  display: inline-block;
+  font-family: 'Lobster';
+  font-size: 22px; }
 
 /*# sourceMappingURL=output.css.map */
