@@ -1,31 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
 
 body {
-	font-family: Helvetica, Arial, sans-serif;
-    color: #665544;
+    font: 100% $font-stack;
+    color: $primary-color;
     padding: 22px;
-
+    line-height: 2em;
     display: block;
     margin: 8px;
 }
 
-@mixin pmargin{
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li { 
+        display: inline-block; 
+        font-family: 'Lobster', $font-stack;
+        font-size: 22px;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+
+@mixin pmargin($upbottom, $leftright) {
     display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    -webkit-margin-before: $upbottom;
+    -webkit-margin-after: $upbottom;
+    -webkit-margin-start: $leftright;
+    -webkit-margin-end: $leftright;
 }
 
-p {
-    @include pmargin;
-}
+div {
 
-@mixin sizing{
-    padding: 12px;
-    line-height: 2em;
-}
+    @include pmargin(2em, 10px);
 
-h1, h2, p {
-    @include sizing;
+    #explain {
+        @extend div;
+        @include pmargin(5em, 100px);
+        color: lighten($primary-color, 30%);
+    }
 }
