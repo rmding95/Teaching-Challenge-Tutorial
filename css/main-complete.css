@@ -1,0 +1,28 @@
+
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+    color: #665544;
+    padding: 22px;
+
+    display: block;
+    margin: 8px;
+}
+
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+@mixin sizing{
+    padding: 12px;
+    line-height: 2em;
+}
+
+h1, h2, p {
+    @include sizing;
+}
